@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap");
+.pokemon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Josefin Sans", sans-serif;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.pokemon-section > div > h3 {
+  text-transform: capitalize;
+}
+.MuiPagination-ul {
+  justify-content: center;
+}
+.pokemon-section > div {
+  width: 20%;
+  position: relative;
+}
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 0;
+}
+.types > p {
+  width: 70px;
+  border-radius: 70px;
+  color: white;
+  padding: 5px;
+  margin: 0;
+  font-weight: bold;
+}
+.pokemon-section > div > button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+}
+.pokemon-section > div > button > i {
+  color: #e8ba10;
+}
+@media only screen and (max-width: 950px) {
+  .pokemon-section > div {
+    width: 40%;
+  }
+  .pokemon-section {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pokemon-section > div {
+    width: 80%;
+  }
+}
